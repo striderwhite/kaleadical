@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleadical Habit Tracker</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Load p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Link to our custom JS file -->
+    <script src="kaleadical.js" defer></script>
+</head>
+<body class="bg-gray-900 flex flex-col items-center justify-center min-h-screen p-4">
+    <div id="canvas-container" class="border-4 border-white shadow-xl"></div>
+    
+    <!-- Button to add more shapes -->
+    <button id="addShapeButton" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
+        Add Shape
+    </button>
+
+    <!-- Checkbox for continuous mode -->
+    <label class="mt-4 flex items-center text-white">
+        <input type="checkbox" id="continuousMode" class="mr-2">
+        Enable Continuous Mode
+    </label>
+</body>
+</html>
